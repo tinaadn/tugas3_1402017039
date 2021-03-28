@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>3D Calculator</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">3D Calculator</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="silinder.html" class="nav__link">Silinder</a></li>
+                        <li class="nav__item"><a href="kerucut.html" class="nav__link">Kerucut</a></li>
+                        <li class="nav__item"><a href="bola.html" class="nav__link">Bola</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <script type="text/javascript">
+                        debugger;
+                        var nama;
+                        var Hai;
+                        var waktu = new Date();
+                        var jam = waktu.getHours();
+
+                        nama = window.prompt("Masukkan Nama Anda: ");
+
+                        if(jam < 12)
+                            ket = "Selamat Pagi ";
+
+                            if(jam >= 12) {
+                                jam = jam -12
+
+                                if(jam < 6)
+                                    ket = "Selamat Siang ";
+
+                                if(jam >= 6) 
+                                    ket = "Selamat Malam"
+                            }
+
+                            document.writeln("<h1>" + ket + ", " + nama);
+                    </script>
+
+                    <h1 class="home__title"><br>Mari <span class="home__title-color"> Mulai</span><br> Menghitung</h1>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/home.jpg" alt="">
+                </div>
+            </section>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p>&#169; Dwi Tina Audina / 1402017039</p>
+        </footer>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
